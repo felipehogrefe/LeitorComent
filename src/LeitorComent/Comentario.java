@@ -14,7 +14,7 @@ public class Comentario {
 	}
 	
 	public void print(){
-		System.out.println(nota+"\n"+titulo+"\n"+comentario+"\n");
+		System.out.println(nota+"\n"+totalPalavras+"\n"+titulo+"\n"+comentario+"\n");
 	}
 	
 	public String getComentario(){
