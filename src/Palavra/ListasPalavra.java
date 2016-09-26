@@ -11,7 +11,7 @@ public class ListasPalavra {
 	
 	static public void printTable(){
 		int contador=0;
-		Enumeration ep = palavras.keys();
+		Enumeration<Integer> ep = palavras.keys();
 		while(ep.hasMoreElements()){
 			contador++;
 			Palavra p = palavras.get(ep.nextElement());
