@@ -10,9 +10,12 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		preencheArrays();
-		discriminaPalavras();
-		ListasPalavra.selecionaPrincipais();
-		ListasPalavra.printaPrincipais();
+		
+		
+		
+//		discriminaPalavras();
+//		ListasPalavra.selecionaPrincipais();
+//		ListasPalavra.printaPrincipais();
 		
 		System.out.println(Palavra.total);
 		
@@ -39,10 +42,10 @@ public class Main {
 
 	private static void preencheArrays() {
 		Chrome.preencheArray();
-		Safari.preencheArray();
-		Opera.preencheArray();
-		Firefox.preencheArray();
-		IE.preencheArray();
+//		Safari.preencheArray();
+//		Opera.preencheArray();
+//		Firefox.preencheArray();
+//		IE.preencheArray();
 	}
 
 }

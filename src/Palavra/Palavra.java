@@ -1,6 +1,7 @@
 package Palavra;
 
 import java.awt.RenderingHints.Key;
+import java.text.Normalizer;
 
 import LeitorComent.Comentario;
 

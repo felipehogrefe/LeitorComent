@@ -7,7 +7,7 @@ import java.util.Hashtable;
 public class ListasPalavra {
 	static Hashtable<Integer,Palavra> palavras = new Hashtable<Integer,Palavra>();
 	static ArrayList<Palavra> principais = new ArrayList<Palavra>();
-	private static int tamanhoLista=100;
+	private static int tamanhoLista=200;
 	
 	static public void printTable(){
 		int contador=0;

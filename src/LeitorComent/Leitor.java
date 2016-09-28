@@ -5,12 +5,16 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 public class Leitor {
-	static private String caminho = "C:/Users/Felipe/workspace/LeitorComent/src/LeitorComent/";
+	static private String caminho = "/home/laccan/workspace/LeitorComent/src/LeitorComent/";
 	
 	static public void leArquivo(String arquivo, ArrayList lista){
+		//discrimina os comentarios de um certo navegador, irá evidencia nota, 
+		//navegador, titulo e comentario
+		
 		String nota="";
 		String titulo="";
 		String comentario="";
+		String navegador=arquivo.substring(0, arquivo.length());
 		BufferedReader r;
         String concat="";
         int contador=0;
@@ -55,7 +59,7 @@ public class Leitor {
                 	}
                 	comentario = concat.substring(0, concat.length()-7);
                 	//cria novo comentario e adiciona na lista do navegador
-                    Comentario novoComentario = new Comentario(nota,titulo,comentario);
+                    Comentario novoComentario = new Comentario(nota,titulo,comentario,navegador);
                     lista.add(novoComentario);
                     contador++;
                 }                
