@@ -24,10 +24,9 @@ public class Caracteristica {
 		for(Comentario c : coment){
 			nota =c.getNota();
 			comentario = c.getComentario();
-			System.out.println(comentario);
+//			System.out.println(comentario);
 			for(String cc : complemento){
-
-				System.out.println(cc);
+//				System.out.println(cc);
 				if(comentario.contains(cc)){
 					contadorCarac[0]+=nota;
 				}

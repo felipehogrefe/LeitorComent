@@ -11,13 +11,15 @@ public class Main {
 		
 		preencheArrays();
 		
+		Chrome.printaNotas();
+		
 		
 		
 //		discriminaPalavras();
 //		ListasPalavra.selecionaPrincipais();
 //		ListasPalavra.printaPrincipais();
-		
-		System.out.println(Palavra.total);
+//		
+//		System.out.println(Palavra.total);
 		
 //		PalavraHash.printTable();
 	}
