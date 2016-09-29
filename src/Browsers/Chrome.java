@@ -9,7 +9,7 @@ import Caracteristica.Caracteristica;
 import LeitorComent.Comentario;
 import LeitorComent.Leitor;
 
-public class Chrome {
+public class Chrome{
 	static private String arq = "chrome";
 	static private String saida = "saidaChrome.txt";
 	static public ArrayList<Comentario> listaChrome = new ArrayList<>();
@@ -22,7 +22,7 @@ public class Chrome {
 	
 	public static void printaNotas(){
 		for(int i : caracteristicas){
-			System.out.println(i);
+			System.out.print(i+",");
 		}
 	}
 }

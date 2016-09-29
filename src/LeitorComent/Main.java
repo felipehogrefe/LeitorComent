@@ -10,11 +10,19 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		preencheArrays();
-		
+
+		System.out.print("Chrome: ");
 		Chrome.printaNotas();
-		
-		
-		
+		System.out.print("\nIE: ");
+		IE.printaNotas();
+		System.out.print("\nFirefox: ");
+		Firefox.printaNotas();
+		System.out.print("\nOpera: ");
+		Opera.printaNotas();
+		System.out.print("\nSafari: ");
+		Safari.printaNotas();
+
+
 //		discriminaPalavras();
 //		ListasPalavra.selecionaPrincipais();
 //		ListasPalavra.printaPrincipais();
@@ -44,10 +52,10 @@ public class Main {
 
 	private static void preencheArrays() {
 		Chrome.preencheArray();
-//		Safari.preencheArray();
-//		Opera.preencheArray();
-//		Firefox.preencheArray();
-//		IE.preencheArray();
+		Safari.preencheArray();
+		Opera.preencheArray();
+		Firefox.preencheArray();
+		IE.preencheArray();
 	}
 
 }

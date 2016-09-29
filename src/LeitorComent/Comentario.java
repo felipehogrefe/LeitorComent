@@ -3,7 +3,7 @@ package LeitorComent;
 import java.text.Normalizer;
 
 public class Comentario {
-	private int nota;
+	private long nota;
 	public int totalPalavras=0;
 	private String titulo;
 	private String comentario;
@@ -11,7 +11,7 @@ public class Comentario {
 	
 	
 	public Comentario(String nota, String titulo, String comentario, String navegador){
-		this.nota=Integer.valueOf(nota)/500;
+		this.nota=Long.valueOf(nota);
 		this.titulo=removerAcentos(titulo.toUpperCase());
 		this.comentario=removerAcentos(comentario.toUpperCase());
 		this.navegador=removerAcentos(navegador.toUpperCase());
@@ -30,7 +30,7 @@ public class Comentario {
 	public String getComentario(){
 		return this.comentario;
 	}
-	public int getNota(){
+	public long getNota(){
 		return this.nota;
 	}
 }

@@ -19,12 +19,12 @@ public class Caracteristica {
 	private static final ArrayList<String[]> listaCarac = new ArrayList<>();
 				
 	public static void setaCaracteristicas(ArrayList<Comentario> coment, int[] contadorCarac){
-		int nota;
+		long nota;
 		String comentario;
 		for(Comentario c : coment){
 			nota =c.getNota();
 			comentario = c.getComentario();
-//			System.out.println(comentario);
+//			System.out.println(nota);
 			for(String cc : complemento){
 //				System.out.println(cc);
 				if(comentario.contains(cc)){

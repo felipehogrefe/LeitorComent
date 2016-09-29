@@ -5,7 +5,8 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 public class Leitor {
-	static private String caminho = "/home/laccan/workspace/LeitorComent/src/LeitorComent/";
+//	static private String caminho = "/home/laccan/workspace/LeitorComent/src/LeitorComent/";
+	static private String caminho = "C:/Users/Felipe/workspace/LeitorComent/src/LeitorComent/";
 	
 	static public void leArquivo(String arquivo, ArrayList lista){
 		//discrimina os comentarios de um certo navegador, irá evidencia nota, 
@@ -65,7 +66,7 @@ public class Leitor {
                 }                
             }
             r.close();
-            System.out.println(contador);
+//            System.out.println(contador);
         }catch(Exception e){
             e.printStackTrace();
         }
