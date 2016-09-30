@@ -32,7 +32,6 @@ public class Caracteristica {
 			listaCarac.add(memoria);
 			listaCarac.add(social);
 		}
-		
 	}
 				
 	public static void setaCaracteristicas(Browser b){
