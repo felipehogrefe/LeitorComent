@@ -14,14 +14,14 @@ public class Main {
 		criaArraysBrowser();
 		preencheArrays();
 		
-		for(Browser bw : browsers){
-			bw.printaNotas();
-			System.out.println(bw.arq);
-		}
+//		for(Browser bw : browsers){
+//			bw.printaNotas();
+//			System.out.println(bw.arq);
+//		}
 
-//		discriminaPalavras();
-//		ListasPalavra.selecionaPrincipais();
-//		ListasPalavra.printaPrincipais();
+		discriminaPalavras();
+		ListasPalavra.selecionaPrincipais();
+		ListasPalavra.printaPrincipais();
 //		
 //		System.out.println(Palavra.total);
 		
