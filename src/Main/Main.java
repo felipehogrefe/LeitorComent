@@ -1,6 +1,7 @@
-package LeitorComent;
+package Main;
 
 import Browsers.*;
+import LeitorComent.Comentario;
 import Palavra.ListasPalavra;
 import Palavra.Palavra;
 

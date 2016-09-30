@@ -29,57 +29,64 @@ public class Caracteristica {
 //				System.out.println(cc);
 				if(comentario.contains(cc)){
 					contadorCarac[0]+=nota;
+					break;
 				}
 			}
 			for(String cc : recurso){
 				if(comentario.contains(cc)){
 					contadorCarac[1]+=nota;
+					break;
 				}
 			}
 			for(String cc : bug){
 				if(comentario.contains(cc)){
 					contadorCarac[2]+=nota;
+					break;
 				}
 			}
 			for(String cc : visual){
 				if(comentario.contains(cc)){
 					contadorCarac[3]+=nota;
+					break;
 				}
 			}
 			for(String cc : download){
 				if(comentario.contains(cc)){
 					contadorCarac[4]+=nota;
+					break;
 				}
 			}
 			for(String cc : video){
 				if(comentario.contains(cc)){
 					contadorCarac[5]+=nota;
+					break;
 				}
 			}
 			for(String cc : seguranca){
 				if(comentario.contains(cc)){
 					contadorCarac[6]+=nota;
+					break;
 				}
 			}
 			for(String cc : velocidade){
 				if(comentario.contains(cc)){
 					contadorCarac[7]+=nota;
+					break;
 				}
 			}
 			for(String cc : memoria){
 				if(comentario.contains(cc)){
 					contadorCarac[8]+=nota;
+					break;
 				}
 			}
 			for(String cc : social){
 				if(comentario.contains(cc)){
 					contadorCarac[9]+=nota;
+					break;
 				}
-			}
-			
-		}
-		
-		
+			}	
+		}		
 	}
 	
 }
