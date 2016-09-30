@@ -10,7 +10,7 @@ public class Firefox {
 	static private String arq = "firefox";
 	static private String saida = "saidaFirefox.txt";
 	public static ArrayList<Comentario> listaFirefox = new ArrayList<>();
-	public static int caracteristicas[] = {0,0,0,0,0,0,0,0,0,0,0};
+	public static int caracteristicas[] = {0,0,0,0,0,0,0,0,0,0};
 	
 	public static void preencheArray(){
 		Leitor.leArquivo(arq, listaFirefox);

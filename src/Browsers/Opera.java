@@ -10,7 +10,7 @@ public class Opera {
 	static private String arq = "opera";
 	static private String saida = "saidaOpera.txt";
 	public static ArrayList<Comentario> listaOpera = new ArrayList<>();
-	public static int caracteristicas[] = {0,0,0,0,0,0,0,0,0,0,0};
+	public static int caracteristicas[] = {0,0,0,0,0,0,0,0,0,0};
 
 	public static void preencheArray(){
 		Leitor.leArquivo(arq, listaOpera);

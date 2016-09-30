@@ -13,7 +13,7 @@ public class Chrome{
 	static private String arq = "chrome";
 	static private String saida = "saidaChrome.txt";
 	static public ArrayList<Comentario> listaChrome = new ArrayList<>();
-	public static int caracteristicas[] = {0,0,0,0,0,0,0,0,0,0,0};
+	public static int caracteristicas[] = {0,0,0,0,0,0,0,0,0,0};
 	
 	public static void preencheArray(){
 		Leitor.leArquivo(arq, listaChrome);
@@ -22,7 +22,7 @@ public class Chrome{
 	
 	public static void printaNotas(){
 		for(int i : caracteristicas){
-			System.out.print(i+",");
+			System.out.print(i+" ");
 		}
 	}
 }

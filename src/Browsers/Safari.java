@@ -10,7 +10,7 @@ public class Safari {
 	static private String arq = "safari";
 	static private String saida = "saidaSafari.txt";
 	public static ArrayList<Comentario> listaSafari = new ArrayList<>();
-	public static int caracteristicas[] = {0,0,0,0,0,0,0,0,0,0,0};
+	public static int caracteristicas[] = {0,0,0,0,0,0,0,0,0,0};
 
 	public static void preencheArray(){
 		Leitor.leArquivo(arq, listaSafari);

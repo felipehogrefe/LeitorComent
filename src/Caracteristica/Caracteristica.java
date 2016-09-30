@@ -66,19 +66,14 @@ public class Caracteristica {
 					contadorCarac[7]+=nota;
 				}
 			}
-			for(String cc : update){
+			for(String cc : memoria){
 				if(comentario.contains(cc)){
 					contadorCarac[8]+=nota;
 				}
 			}
-			for(String cc : memoria){
-				if(comentario.contains(cc)){
-					contadorCarac[9]+=nota;
-				}
-			}
 			for(String cc : social){
 				if(comentario.contains(cc)){
-					contadorCarac[10]+=nota;
+					contadorCarac[9]+=nota;
 				}
 			}
 			
