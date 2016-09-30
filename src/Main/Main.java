@@ -1,28 +1,23 @@
 package Main;
 
+import java.util.ArrayList;
+
 import Browsers.*;
 import LeitorComent.Comentario;
 import Palavra.ListasPalavra;
 import Palavra.Palavra;
 
 public class Main {
+	public static ArrayList<Browser> browsers = new ArrayList<>();
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+	public static void main(String[] args) {	
+		criaArraysBrowser();
 		preencheArrays();
-
-		System.out.print("Chrome: ");
-		Chrome.printaNotas();
-		System.out.print("\nIE: ");
-		IE.printaNotas();
-		System.out.print("\nFirefox: ");
-		Firefox.printaNotas();
-		System.out.print("\nOpera: ");
-		Opera.printaNotas();
-		System.out.print("\nSafari: ");
-		Safari.printaNotas();
-
+		
+		for(Browser bw : browsers){
+			bw.printaNotas();
+			System.out.println(bw.arq);
+		}
 
 //		discriminaPalavras();
 //		ListasPalavra.selecionaPrincipais();
@@ -34,29 +29,30 @@ public class Main {
 	}
 
 	private static void discriminaPalavras() {
-		for(Comentario c : Firefox.listaFirefox){
-			Palavra.discriminaPalavra(c);
-		}
-		for(Comentario c : IE.listaIE){
-			Palavra.discriminaPalavra(c);
-		}
-		for(Comentario c : Opera.listaOpera){
-			Palavra.discriminaPalavra(c);
-		}
-		for(Comentario c : Safari.listaSafari){
-			Palavra.discriminaPalavra(c);
-		}
-		for(Comentario c : Chrome.listaChrome){
-			Palavra.discriminaPalavra(c);
+		for(Browser bw : browsers){
+			for(Comentario c : bw.lista){
+				Palavra.discriminaPalavra(c);
+			}
 		}
 	}
+	
+	private static void criaArraysBrowser(){
+		Browser b = new Browser("chrome","chromeSaida");
+		browsers.add(b);
+		b = new Browser("firefox","firefoxSaida");
+		browsers.add(b);
+		b = new Browser("IE","IESaida");
+		browsers.add(b);
+		b = new Browser("opera","operaSaida");
+		browsers.add(b);
+		b = new Browser("safari","safariSaida");
+		browsers.add(b);
+	}
 
-	private static void preencheArrays() {
-		Chrome.preencheArray();
-		Safari.preencheArray();
-		Opera.preencheArray();
-		Firefox.preencheArray();
-		IE.preencheArray();
+	private static void preencheArrays() {		
+		for(Browser bw : browsers){
+			bw.preencheArray();
+		}
 	}
 
 }

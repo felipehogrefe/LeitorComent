@@ -2,6 +2,8 @@ package Caracteristica;
 
 import java.util.ArrayList;
 
+import Browsers.ArrayCaracteristicas;
+import Browsers.Browser;
 import LeitorComent.Comentario;
 
 public class Caracteristica {
@@ -18,9 +20,11 @@ public class Caracteristica {
 	private static final String[] social = {"REDES", "SOCIAIS", "FACEBOOK", "TWITTER", "EMAIL", "E-MAIL"};			// 10
 	private static final ArrayList<String[]> listaCarac = new ArrayList<>();
 				
-	public static void setaCaracteristicas(ArrayList<Comentario> coment, int[] contadorCarac){
+	public static void setaCaracteristicas(Browser b){
 		long nota;
 		String comentario;
+		ArrayList<Comentario> coment = b.lista;
+		ArrayCaracteristicas ac = b.contador;
 		for(Comentario c : coment){
 			nota =c.getNota();
 			comentario = c.getComentario();
@@ -28,61 +32,61 @@ public class Caracteristica {
 			for(String cc : complemento){
 //				System.out.println(cc);
 				if(comentario.contains(cc)){
-					contadorCarac[0]+=nota;
+					ac.incrementaArray(0, nota);
 					break;
 				}
 			}
 			for(String cc : recurso){
 				if(comentario.contains(cc)){
-					contadorCarac[1]+=nota;
+					ac.incrementaArray(1, nota);
 					break;
 				}
 			}
 			for(String cc : bug){
 				if(comentario.contains(cc)){
-					contadorCarac[2]+=nota;
+					ac.incrementaArray(2, nota);
 					break;
 				}
 			}
 			for(String cc : visual){
 				if(comentario.contains(cc)){
-					contadorCarac[3]+=nota;
+					ac.incrementaArray(3, nota);
 					break;
 				}
 			}
 			for(String cc : download){
 				if(comentario.contains(cc)){
-					contadorCarac[4]+=nota;
+					ac.incrementaArray(4, nota);
 					break;
 				}
 			}
 			for(String cc : video){
 				if(comentario.contains(cc)){
-					contadorCarac[5]+=nota;
+					ac.incrementaArray(5, nota);
 					break;
 				}
 			}
 			for(String cc : seguranca){
 				if(comentario.contains(cc)){
-					contadorCarac[6]+=nota;
+					ac.incrementaArray(6, nota);
 					break;
 				}
 			}
 			for(String cc : velocidade){
 				if(comentario.contains(cc)){
-					contadorCarac[7]+=nota;
+					ac.incrementaArray(7, nota);
 					break;
 				}
 			}
 			for(String cc : memoria){
 				if(comentario.contains(cc)){
-					contadorCarac[8]+=nota;
+					ac.incrementaArray(8, nota);
 					break;
 				}
 			}
 			for(String cc : social){
 				if(comentario.contains(cc)){
-					contadorCarac[9]+=nota;
+					ac.incrementaArray(9, nota);
 					break;
 				}
 			}	
